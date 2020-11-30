@@ -1,0 +1,47 @@
+
+--初始化 git
+git init
+
+--修改名字/email
+git config --global user.name "JA"
+git config --global user.email java08141222@gmail.com
+
+--查詢 config
+git config --list
+git config user.name
+git config user.email
+
+--建立檔案
+vim index.html
+
+--i
+輸入
+
+--esc
+離開
+
+--:qw
+離開並寫入
+
+
+--檢查當前狀態
+git status
+
+--放到暫時處存區才能做修改
+git add index.html
+
+
+--移出暫存區
+git rm --cached index.html
+
+
+git restore --staged index.html
+
+--轉由 notepad++ 編輯
+git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+--commit
+git commit -m "輸入訊息"    //只想輸入一行紀錄，若不加 -m 就可進入vim編輯，可輸入多行
+
+--紀錄
+git log
